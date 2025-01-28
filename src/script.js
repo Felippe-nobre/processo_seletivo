@@ -47,9 +47,9 @@ async function preencherMunicipios() {
   let campoCpf = document.querySelector('.cpf');
 
   campoCpf.addEventListener("keypress", (event) => {
-    // Verifica se a tecla pressionada é um número (código ASCII entre 48 e 57)
+    
     if (event.key < '0' || event.key > '9') {
-      event.preventDefault(); // Impede a entrada de caracteres não numéricos
+      event.preventDefault();  
       return;
     }
   
